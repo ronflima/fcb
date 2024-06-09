@@ -34,9 +34,9 @@
 int
 fcb_read(const fcb_t *fcb)
 {
-  register int i;
-  record_t *prev = NULL;
   int rc = 0x0;
+  record_t *prev = NULL;
+  register int i;
   size_t record_size;
 
   for (i = 0x0; i < fcb->records_qty; ++i)
